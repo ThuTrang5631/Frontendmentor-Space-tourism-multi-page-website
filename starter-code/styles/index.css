@@ -1,0 +1,155 @@
+.header {
+  padding: 30px 0 0 40px;
+  position: relative;
+}
+.header .header__logo img {
+  width: 48px;
+}
+.header .header__line {
+  background-color: #ffffff;
+  height: 0.5px;
+  position: absolute;
+  left: 12%;
+}
+.header .header__nav {
+  padding: 20px 10px 20px 20%;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  --tw-backdrop-blur: 4px;
+}
+.header .header__navitem {
+  margin-right: 30px;
+  position: relative;
+}
+.header .header__navitem:hover::after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: rgb(192, 192, 192);
+  bottom: -20px;
+  position: absolute;
+}
+.header .header__navitem:last-child {
+  margin-right: 0;
+}
+.header .header__navitem a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  --tw-text-opacity: 1;
+  font-weight: 500;
+}
+.header .header__navitem a span {
+  margin-left: 5px;
+}
+
+.container__headernavbarmobile {
+  background-color: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 400;
+  align-items: flex-end;
+  padding: 0 !important;
+}
+.container__headernavbarmobile .header__navmobile {
+  width: 60%;
+  height: 100vh;
+  padding: 40px 20px;
+  background-color: rgba(12, 14, 24, 0.7490196078);
+}
+.container__headernavbarmobile .header__navitem--mobile {
+  margin-bottom: 35px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container__headernavbarmobile .header__navitem--mobile:last-child {
+  margin-bottom: 0;
+}
+.container__headernavbarmobile .header__navitem--mobile:first-child {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .header .header__nav {
+    padding-left: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-inline: 25px;
+  }
+  .header .header__navbaricon {
+    padding-inline: 0;
+  }
+  .header .header__navbaricon img {
+    width: 30px;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.active::after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: #ffffff;
+  bottom: -20px;
+  position: absolute;
+}/*# sourceMappingURL=index.css.map */
