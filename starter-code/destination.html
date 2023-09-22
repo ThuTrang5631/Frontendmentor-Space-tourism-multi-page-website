@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="destination__container">
     <header class="header d-flex align-items-center justify-content-between">
         <div class="header__logo col-md-2 col-xl-1">
             <img src="./assets/shared/logo.svg" alt="logo">
@@ -62,19 +62,42 @@
             </li>
         </ul>
     </div>
-
-    <!-- 00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to
-  outer space and not hover kind of on the edge of it. Well sit back, and relax
-  because we’ll give you a truly out of this world experience!
-
-  Explore -->
+    <main class="destination">
+        <div class="destination__title d-flex align-items-center">
+            <span>01</span>
+            <h3>PICK YOUR DESTINATION</h3>
+        </div>
+        <section class="destination__content d-flex flex-column flex-lg-row align-items-lg-center">
+            <div class="destination__contentleft">
+                <img class="destination__contentleftimg" src="./assets/destination/image-moon.png" alt="moon">
+            </div>
+            <div class="destination__contentright">
+                <ul class="destination__contentrightnav d-flex">
+                    <li id="js-btn-moon" class="position-relative"><span>MOON</span></li>
+                    <li id="js-btn-mars" class="position-relative"><span>MARS</span></li>
+                    <li id="js-btn-europa" class="position-relative"><span>EUROPA</span></li>
+                    <li id="js-btn-titan" class="position-relative"><span>TITAN</span></li>
+                </ul>
+                <div class="destination__contentrightwrap">
+                    <h1 class="destination__contentrighttitle"></h1>
+                    <p class="destination__contentrightdesc"> See our planet as you’ve never seen it before. A perfect
+                        relaxing trip away to help
+                        regain perspective and come back refreshed. While you’re there, take in some history
+                        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                </div>
+                <div class="destination__contentrightdistance d-flex">
+                    <div class="destination__contentrightdistancedesc">
+                        <p> AVG. DISTANCE</p>
+                        <h3 class="destination__km">225 MIL. KM</h3>
+                    </div>
+                    <div class="destination__contentrightdistancedesc">
+                        <p> EST. TRAVEL TIME</p>
+                        <h3 class="destination__days">3 DAYS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
@@ -83,6 +106,6 @@
     crossorigin="anonymous"></script>
 
 <script src="./js/home.js"></script>
-
+<script src="./js/destination.js"></script>
 
 </html>

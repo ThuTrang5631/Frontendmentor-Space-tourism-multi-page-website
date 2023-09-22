@@ -97,9 +97,6 @@
 }
 .home__container {
   background-image: url("../assets/home/background-home-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-block: 30px 50px;
 }
 .home__container .home {
   padding-inline: 40px;
@@ -189,6 +186,143 @@
     font-size: 20px;
   }
 }
+.destination__container {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+}
+.destination__container .destination {
+  padding-inline: 40px;
+}
+.destination__container .header {
+  margin-bottom: 60px;
+}
+.destination__container .destination__title {
+  font-size: 28px;
+  font-size: 28px;
+  padding-left: 110px;
+  margin-bottom: 50px;
+}
+.destination__container .destination__title h3 {
+  color: #ffffff;
+  letter-spacing: 4.72px;
+}
+.destination__container .destination__title span {
+  font-weight: 700;
+  margin-right: 20px;
+  color: #4b4e56;
+}
+.destination__container .destination__contentleft {
+  width: 50%;
+  margin-right: 40px;
+}
+.destination__container .destination__contentright {
+  width: 50%;
+}
+.destination__container .destination__contentright li {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: #c4cae9;
+  margin-right: 20px;
+}
+.destination__container .destination__contentright li:last-child {
+  margin-right: 0;
+}
+.destination__container .destination__contentrightnav {
+  margin-bottom: 60px;
+}
+.destination__container .destination__contentrightnav li {
+  cursor: pointer;
+}
+.destination__container .destination__contentrighttitle {
+  color: #ffffff;
+  font-size: 100px;
+  padding-left: 10px;
+  line-height: 150px;
+  margin-bottom: 10px;
+}
+.destination__container .destination__contentrightdesc {
+  font-size: 18px;
+  line-height: 32px;
+  color: #c4cae9;
+  max-width: 85%;
+  padding-bottom: 50px;
+  border-bottom: 0.5px solid #c4cae9;
+  margin-bottom: 15px;
+}
+.destination__container .destination__contentrightdistance {
+  padding-top: 30px;
+}
+.destination__container .destination__contentrightdistancedesc:first-child {
+  margin-right: 50px;
+}
+.destination__container .destination__contentrightdistancedesc p {
+  margin-bottom: 15px;
+  color: #c4cae9;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  line-height: 20px;
+}
+.destination__container .destination__contentrightdistancedesc h3 {
+  color: #ffffff;
+  line-height: 42px;
+  font-size: 28px;
+}
+.destination__container .destination__content {
+  padding-inline: 6%;
+}
+
+@media screen and (max-width: 1200px) {
+  .destination__container .destination__content {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .destination__container .destination__content {
+    padding: 0;
+  }
+  .destination__container .destination__contentleft,
+  .destination__container .destination__contentright {
+    width: 100%;
+  }
+  .destination__container .destination__contentleft {
+    margin-right: 0;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .destination__container .destination__contentleft img {
+    width: 50%;
+  }
+  .destination__container .destination__contentright,
+  .destination__container .destination__contentrightwrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination__container .destination__contentrighttitle {
+    text-align: center;
+    padding-left: 0;
+  }
+  .destination__container .destination__contentrightdesc {
+    width: 80%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .destination__container .destination__title {
+    font-size: 20px;
+    padding-left: 0;
+    justify-content: center;
+  }
+  .destination__container .destination {
+    padding-inline: 20px;
+  }
+  .destination__container .destination__contentrighttitle {
+    font-size: 80px;
+  }
+  .destination__container .destination__contentright li {
+    margin-right: 10px;
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -220,6 +354,9 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 30px 50px;
 }
 
 html {
