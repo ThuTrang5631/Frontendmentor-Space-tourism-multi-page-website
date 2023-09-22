@@ -1,0 +1,118 @@
+.home__container {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 30px 50px;
+
+  .home {
+    padding-inline: 40px;
+
+    .home__left {
+      width: 50%;
+      margin-right: 10px;
+      margin-bottom: 100px;
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 36px;
+        color: $color-3;
+      }
+
+      h1 {
+        font-size: 172px;
+        color: $white;
+        margin-bottom: 10px;
+        padding-left: 5px;
+      }
+
+      p {
+        font-size: 18px;
+        color: $color-3;
+        padding-left: 5px;
+        max-width: 78%;
+        line-height: 28px;
+      }
+    }
+
+    .home__right {
+      width: 50%;
+    }
+
+    .home__wrapbtnexplore {
+      width: 275px;
+      height: 275px;
+      background-color: $white;
+
+      span {
+        font-size: 32px;
+        line-height: 28px;
+        color: $black;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 0px 35px #979797;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .home__container {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+
+    .home {
+      padding-inline: 20px;
+
+      .home__left,
+      .home__right {
+        width: 100%;
+      }
+
+      .home__left {
+        margin-right: 0;
+
+        p {
+          max-width: 60%;
+          text-align: center;
+        }
+
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .home__container {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+
+    .home {
+      .home__left {
+        h2 {
+          font-size: 18px;
+        }
+
+        h1 {
+          font-size: 80px;
+        }
+
+        p {
+          font-size: 16px;
+          max-width: 85%;
+        }
+      }
+
+      .home__wrapbtnexplore {
+        width: 170px;
+        height: 170px;
+
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

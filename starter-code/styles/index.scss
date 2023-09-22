@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./header";
+@import "./home";
 
 img {
   display: block;
@@ -29,6 +30,9 @@ p {
 
 body {
   margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
 }
 
 html {
@@ -43,13 +47,6 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-body {
-  background-image: url("../assets/home/background-home-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 
 .active {
