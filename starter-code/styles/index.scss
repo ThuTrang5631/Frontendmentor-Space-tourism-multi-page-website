@@ -2,6 +2,7 @@
 @import "./header";
 @import "./home";
 @import "./destination";
+@import "./crew";
 
 img {
   display: block;
@@ -62,5 +63,31 @@ ul {
     background-color: $white;
     bottom: -20px;
     position: absolute;
+  }
+}
+
+.content__title {
+  font-size: 28px;
+  font-size: 28px;
+  padding-left: 110px;
+  margin-bottom: 50px;
+
+  h3 {
+    color: $white;
+    letter-spacing: 4.72px;
+  }
+
+  span {
+    font-weight: 700;
+    margin-right: 20px;
+    color: $color-4;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .content__title {
+    font-size: 20px;
+    padding-left: 0;
+    justify-content: center;
   }
 }

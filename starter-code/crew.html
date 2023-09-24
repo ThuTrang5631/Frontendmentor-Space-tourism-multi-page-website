@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="crew__container">
     <header class="header d-flex align-items-center justify-content-between">
         <div class="header__logo col-md-2 col-xl-1">
             <img src="./assets/shared/logo.svg" alt="logo">
@@ -62,6 +62,33 @@
             </li>
         </ul>
     </div>
+    <main class="crew">
+        <div class="content__title d-flex align-items-center">
+            <span>02</span>
+            <h3>MEET YOUR CREW</h3>
+        </div>
+        <section class="crew__content d-flex flex-column flex-lg-row align-items-lg-center ">
+            <div class="crew__left d-flex flex-column align-items-center align-items-lg-start order-1 order-md-0">
+                <div
+                    class="crew__wrapleft d-flex flex-column align-items-center align-items-lg-start order-1 order-md-0">
+                    <h4 class="crew__lefttitle">Commander</h4>
+                    <h1 class="crew__leftname">Douglas Hurley</h1>
+                    <p class="crew__leftdesc">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+                        and former NASA astronaut. He launched into space for the third time as
+                        commander of Crew Dragon Demo-2.</p>
+                </div>
+                <ul class="crew__btnsslide d-flex order-0 order-md-1">
+                    <li id="js-crew-commander" class="crew__btn me-4"></li>
+                    <li id="js-crew-specialist" class="crew__btn me-4"></li>
+                    <li id="js-crew-pilot" class="crew__btn me-4"></li>
+                    <li id="js-crew-engineer" class="crew__btn"></li>
+                </ul>
+            </div>
+            <div class="crew__right d-flex flex-column align-items-center order-0 order-md-1">
+                <img class="crew__rightimg" src="./assets/crew/image-douglas-hurley.webp" alt="people">
+            </div>
+        </section>
+    </main>
 
     <!-- 00 Home
   01 Destination
@@ -83,6 +110,7 @@
     crossorigin="anonymous"></script>
 
 <script src="./js/home.js"></script>
+<script src="./js/crew.js"></script>
 
 
 </html>
