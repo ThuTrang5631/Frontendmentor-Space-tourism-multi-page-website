@@ -1,0 +1,138 @@
+.technology__container {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .technology {
+    padding-left: 40px;
+  }
+
+  .technology__contentleft {
+    width: 60%;
+    margin-right: 20px;
+  }
+
+  .technology__btn {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: $white;
+    border: 0.6px solid $white;
+    font-size: 32px;
+    line-height: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .technology__content {
+    padding-left: 112px;
+  }
+
+  .technology__contentlefttext,
+  .technology__contentlefttitle {
+    text-transform: uppercase;
+  }
+
+  .technology__contentleftwrap {
+    color: $color-5;
+  }
+
+  .technology__contentlefttext {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .technology__contentlefttitle {
+    font-size: 56px;
+    color: $white;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .technology__contentleftdesc {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 75%;
+  }
+
+  .technology__tabchoose {
+    margin-right: 80px;
+  }
+
+  .technology__contentright {
+    width: 40%;
+  }
+
+  .technology-active {
+    background-color: $white;
+    color: $black;
+  }
+
+  .technology__contentrightimg {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: $breakpoint-xl) {
+  .technology__container {
+    .technology__content {
+      padding-left: 0;
+    }
+
+    .technology {
+      padding-left: 0;
+    }
+
+    .technology__contentright {
+      margin-bottom: 80px;
+    }
+
+    .technology__tabchoose {
+      margin-right: 0;
+      margin-bottom: 45px;
+    }
+
+    .technology__contentleft {
+      padding-inline: 40px;
+    }
+
+    .technology__contentright,
+    .technology__contentleft {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .technology__container {
+    .technology__btn {
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+    }
+
+    .technology__contentlefttitle {
+      font-size: 24px;
+    }
+
+    .technology__contentleft {
+      margin-right: 0;
+    }
+
+    .technology__title,
+    .technology__contentleft {
+      padding-inline: 20px;
+    }
+
+    .technology__contentlefttext,
+    .technology__contentleftdesc {
+      font-size: 14px;
+    }
+  }
+}

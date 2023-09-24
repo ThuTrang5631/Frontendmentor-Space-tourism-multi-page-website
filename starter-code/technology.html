@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="technology__container">
     <header class="header d-flex align-items-center justify-content-between">
         <div class="header__logo col-md-2 col-xl-1">
             <img src="./assets/shared/logo.svg" alt="logo">
@@ -62,19 +62,36 @@
             </li>
         </ul>
     </div>
-
-    <!-- 00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to
-  outer space and not hover kind of on the edge of it. Well sit back, and relax
-  because we’ll give you a truly out of this world experience!
-
-  Explore -->
+    <main class="technology">
+        <div class="technology__title content__title d-flex align-items-center">
+            <span>03</span>
+            <h3>SPACE LAUNCH 101</h3>
+        </div>
+        <section class="technology__content d-flex flex-column flex-xl-row">
+            <div
+                class="technology__contentleft d-flex flex-column align-items-center flex-xl-row align-items-xl-start order-1 order-xl-0">
+                <ul class="technology__tabchoose d-flex flex-row flex-xl-column">
+                    <li id="js-technology-1" class="technology__btn me-4 mb-xl-5 technology-active">1</li>
+                    <li id="js-technology-2" class="technology__btn me-4 mb-xl-5 ">2</li>
+                    <li id="js-technology-3" class="technology__btn">3</li>
+                </ul>
+                <div class="technology__contentleftwrap d-flex flex-column align-items-center align-items-xl-start">
+                    <h3 class="technology__contentlefttext">THE TERMINOLOGY ...</h3>
+                    <h1 class="technology__contentlefttitle">Launch vehicle</h1>
+                    <p class="technology__contentleftdesc text-center text-xl-start">A launch vehicle or
+                        carrier rocket is a rocket-propelled
+                        vehicle used to carry a
+                        payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+                        WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+                        it's quite an awe-inspiring sight on the launch pad!</p>
+                </div>
+            </div>
+            <div class="technology__contentright order-0 order-xl-1">
+                <img class="technology__contentrightimg" src="./assets/technology/image-launch-vehicle-portrait.jpg"
+                    alt="image content">
+            </div>
+        </section>
+    </main>
 
 </body>
 
@@ -83,6 +100,6 @@
     crossorigin="anonymous"></script>
 
 <script src="./js/home.js"></script>
-
+<script src="./js/technology.js"></script>
 
 </html>
