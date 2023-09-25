@@ -12,11 +12,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,20 +27,24 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+**Desktop**:
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![image](https://github.com/ThuTrang5631/Frontendmentor-Space-tourism-multi-page-website/assets/70875419/b26a274c-d9e0-4281-818c-895a488eae18)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+**Tablet**
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![image](https://github.com/ThuTrang5631/Frontendmentor-Space-tourism-multi-page-website/assets/70875419/df2e376c-b06c-41da-8e48-707f679d86b1)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+**Mobile:**
+![image](https://github.com/ThuTrang5631/Frontendmentor-Space-tourism-multi-page-website/assets/70875419/3df3560a-38d9-4359-8565-3bfa254c4d66)
+
+![image](https://github.com/ThuTrang5631/Frontendmentor-Space-tourism-multi-page-website/assets/70875419/742acc19-1118-4ea0-9507-2e4c4c897364)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/ThuTrang5631/Frontendmentor-Space-tourism-multi-page-website.git
+- Live Site URL: https://space-tourism-multi-page-websitee.netlify.app/
 
 ## My process
 
@@ -52,61 +53,46 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- SCSS
+- Desktop-first workflow
+- JQuery - library JS
+- Bootstrap 5
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+1. There are 12 columns in Boostrap and if you want to use the col class, you must have the row class included.
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+<div class="row align-items-start">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+</div>
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+2. Breakpoints in bootstrap
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px, // >= 56px
+  md: 768px, // >= 768px
+  lg: 992px, // >= 992px
+  xl: 1200px, // >=1200px
+  xxl: 1400px // >= 1400px
+);
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+Animation, effect for website
 
 ## Author
+- LinkedIn - [@Thu Trang](www.linkedin.com/in/thutrang5631)
+- Frontend Mentor - [@Thu Trang](https://www.frontendmentor.io/profile/ThuTrang5631)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
