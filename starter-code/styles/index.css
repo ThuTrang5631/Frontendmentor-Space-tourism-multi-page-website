@@ -217,6 +217,15 @@
 .destination__container .destination__contentrightnav li {
   cursor: pointer;
 }
+.destination__container .destination__contentrightnav li:hover span::after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: rgb(192, 192, 192);
+  bottom: -20px;
+  position: absolute;
+}
 .destination__container .destination__contentrighttitle {
   color: #ffffff;
   font-size: 100px;
@@ -253,6 +262,9 @@
 }
 .destination__container .destination__content {
   padding-inline: 6%;
+}
+.destination__container .destination__contentleftimg {
+  animation: twirl-image infinite 10s linear;
 }
 
 @media screen and (max-width: 1200px) {
@@ -301,6 +313,14 @@
   }
   .destination__container .destination__contentright li {
     margin-right: 10px;
+  }
+}
+@keyframes twirl-image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 .crew__container {
@@ -593,4 +613,7 @@ ul {
     padding-left: 0;
     justify-content: center;
   }
+}
+.animate__animated.animate__bounceInUp {
+  --animate-duration: 2s;
 }/*# sourceMappingURL=index.css.map */
